@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script language="JavaScript" type="text/javascript">
+var pin ;
+var actualpin =("1971");
+var count = 0;
+function recur(){
+do {
+pin = prompt("Enter your pin ", "enter here");
+count++;
+}while(actualpin!==pin && count<3);
+if(pin==actualpin){
+
+function calculate(fir , fir2 ){
+if(fir=="" || fir2 ==""){
+alert ("please input a value ", "Erorr" );
+return;
+}
+alert("The product is " +(fir*fir2));
+
+}
+}else{
+alert("you can't use the calculator");
+ recur();
+}}
+recur();
+
+    </script>
+</head>
+
+<body>
+<p> Enter your numbers </p>
+<form onsubmit="calculate(t1.value,t2.value)">
+<input type="number" step="any" name="t1" placeholder="Enter first number"><br/>
+<input type="number" step="any" name="t2" placeholder="Enter second number"><br/>
+
+
+    <input type="submit" value="Calculate Product" >
+
+</form>
+<script>
+
+
+    </script>
+</body>
+</html>
